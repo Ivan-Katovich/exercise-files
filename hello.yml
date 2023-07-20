@@ -1,6 +1,6 @@
 name: hello
 
-on: [push]
+on: [pull-request]
 
 jobs:
   build:
