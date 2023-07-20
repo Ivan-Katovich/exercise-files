@@ -13,7 +13,9 @@ jobs:
       - name: Step two
         run: env | sort
       - name: Step three
-        run: node --version
+        run: |
+          node --version
+          npm --version
   job2:
     name: Second job
     runs-on: windows-latest
@@ -23,6 +25,8 @@ jobs:
       - name: Step two
         run: "Get-ChildItem Env: | Sort-Object Name"
       - name: Step three
-        run: node --version
+        run: |
+          node --version
+          npm --version
 
 
